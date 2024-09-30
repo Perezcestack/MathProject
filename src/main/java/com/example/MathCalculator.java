@@ -10,6 +10,8 @@ public class MathCalculator {
         int y = input.nextInt();
         input.nextLine();
 
+
+
         System.out.println("Possible Calculations: ");
         System.out.println("    (A)dd");
         System.out.println("    (S)ubtract");
@@ -38,46 +40,4 @@ public class MathCalculator {
             System.out.println(x + " / " + y + " = " + output);
         }
     }
-/*declare an int value for x
-* declare an int value for y
-* Scanner blank = new Scanner (System.in)
-* *sout print a "First enter value X"
-* X = scanner input     7
-* sout print a "second enter value y"
-Y= Scanner input       2
-*blank.nextline
-*
-Sout print Possible Calculations
-(A)dd
-(S)ubtract
-(M)ultiply
-(D)ivide
- * Print sout "Select possible options"
- * String selected
- * scanner input of "Selected"
- While statement in case ASMD are not selected
- * then
- * print sout "ASMD not selected please try again
- * selected = scanner input
- *
- *
- * float output;
- * If selected is A
- * Output = X + Y
- * sout " X  + " + " + Y + "=" Output"
- * else if(Selected = S)
- *  Output = X - Y
- * sout " X  + " - " + Y + "=" Output"
- * else if(Selected = M)
- *  Output = X * Y
- * sout " X  + " * " + Y + "=" Output"
- * else if(Selected = D)
- *  Output = X / Y
- * sout " X  + " / " + Y + "=" Output"
- *
- *
- *
- *
- */
-
 }
