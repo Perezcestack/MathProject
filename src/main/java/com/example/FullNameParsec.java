@@ -1,23 +1,37 @@
 package com.example;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class FullNameParsec {
     static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
-        String firstName;
-        String lastName;
+        String wholeName;
 
-        System.out.print("Hello please enter your first name: ");
-        firstName = input.nextLine().trim();
+        System.out.print("Hello please enter your Whole name: ");
+        wholeName = input.nextLine();
+        input.close();
 
-        System.out.print("Please enter your last name: ");
-        lastName = input.nextLine().trim();
+        String[] names = wholeName.split("\\s+");
 
-        System.out.println("Hello " + firstName + " " + lastName);
+        String firstName = "";
+        String middleName = "(none)";
+        String lastName = "";
 
-        System.out.println("First Name:" + firstName);
-        System.out.println("Last Name:" + lastName);
+        if (names.length == 2) {
+           firstName = names[0];
+           lastName = names[1];
+        } else if (names.length == 3){
+           firstName = names[0];
+            middleName = names[1];
+            lastName = names[2];
+        } else {
+            System.out.println("ISSUE");
+        }
 
+        System.out.println("Your name is " + firstName + " " + middleName +" " + lastName);
+        System.out.println("First Name: " + firstName);
+        System.out.println("Middle Name: " + middleName);
+        System.out.println("Last Name: " + lastName);
 
     }
 }
