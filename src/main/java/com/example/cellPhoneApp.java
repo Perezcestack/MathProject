@@ -1,12 +1,27 @@
 package com.example;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class cellPhoneApp {
 
     static Scanner input = new Scanner(System.in);
 
+    public static void display(CellPhone cellPhone) {
+        System.out.println("The serial number is: > " + cellPhone.getSerialNumber());
+        System.out.println("The model of the phone is: > " + cellPhone.getModel());
+        System.out.println("The carrier of the phone: > " + cellPhone.getCarrier());
+        System.out.println("The phone number is: > " + cellPhone.getPhoneNumber());
+        System.out.println("The owner of the phone is: > " + cellPhone.getOwner());
+    }
+
     public static void main(String[] args) {
         //prompt cellphone details
+        CellPhone cellPhone1 = createCellPhone();
+        CellPhone cellPhone2 = createCellPhone();
+        cellPhone1.dial(cellPhone2.getPhoneNumber());
+
+    }
+    public static CellPhone createCellPhone() {
         System.out.print("What is your serial number?: ");
         String serialNumber = input.nextLine();
 
@@ -29,11 +44,7 @@ public class cellPhoneApp {
         cesar.setPhoneNumber(phoneNumber);
         cesar.setOwner(owner);
 
-        System.out.println("The serial number is: > " + cesar.getSerialNumber());
-        System.out.println("The model of the phone is: > " + cesar.getModel());
-        System.out.println("The carrier of the phone: > " + cesar.getCarrier());
-        System.out.println("The phone number is: > " + cesar.getPhoneNumber());
-        System.out.println("The owner of the phone is: > " + cesar.getOwner());
+        return cesar;
     }
-
 }
+

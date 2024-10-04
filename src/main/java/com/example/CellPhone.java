@@ -7,6 +7,9 @@ public class CellPhone {
     private String phoneNumber = "";
     private String owner = "";
 
+public void dial(String phoneNumber){
+    System.out.println(owner + " is calling " + phoneNumber );
+}
     public String getCarrier() {
         return carrier;
     }
@@ -50,7 +53,7 @@ public class CellPhone {
     public CellPhone() {
     }
 
-    public CellPhone(String serialNumber, String model, String carrier, String phoneNumber, String owner){
+    public CellPhone(String serialNumber, String model, String carrier, String phoneNumber, String owner, String dial){
         this.serialNumber = serialNumber;
         this.model = model;
         this.carrier = carrier;
