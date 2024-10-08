@@ -6,13 +6,13 @@ public class cellPhoneApp {
 
     static Scanner input = new Scanner(System.in);
 
-    public static void display(CellPhone cellPhone) {
-        System.out.println("The serial number is: > " + cellPhone.getSerialNumber());
-        System.out.println("The model of the phone is: > " + cellPhone.getModel());
-        System.out.println("The carrier of the phone: > " + cellPhone.getCarrier());
-        System.out.println("The phone number is: > " + cellPhone.getPhoneNumber());
-        System.out.println("The owner of the phone is: > " + cellPhone.getOwner());
-    }
+//   // public static void display(CellPhone cellPhone) {
+//        System.out.println("The serial number is: > " + cellPhone.getSerialNumber());
+//        System.out.println("The model of the phone is: > " + cellPhone.getModel());
+//        System.out.println("The carrier of the phone: > " + cellPhone.getCarrier());
+//        System.out.println("The phone number is: > " + cellPhone.getPhoneNumber());
+//        System.out.println("The owner of the phone is: > " + cellPhone.getOwner());
+//    }
 
     public static void main(String[] args) {
         //prompt cellphone details
