@@ -1,0 +1,1 @@
+Employee ID is 60 Their name is Zane Stephens and their gross pay is: 607.5

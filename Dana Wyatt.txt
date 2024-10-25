@@ -1,0 +1,1 @@
+Employee ID is 10 Their name is Dana Wyatt and their gross pay is: 656.25

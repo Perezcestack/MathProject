@@ -33,7 +33,7 @@ public class FamousQuotes {
             if(another.equals("y")){
                 do{
                     System.out.print("Pick a number ranging 1-10: ");
-                    input.nextLine();
+                    select = input.nextLine();
 
                     System.out.println("You selected: " + quotes);
 

@@ -1,0 +1,1 @@
+Employee ID is 30 Their name is Brittany Thibbs and their gross pay is: 660.0
