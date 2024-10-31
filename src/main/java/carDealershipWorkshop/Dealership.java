@@ -1,6 +1,5 @@
-package Week5;
+package carDealershipWorkshop;
 
-import java.io.*;
 import java.util.ArrayList;
 
 public class Dealership {
@@ -47,12 +46,7 @@ public class Dealership {
 
     @Override
     public String toString() {
-        return "Dealership{" +
-                "name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                ", phone='" + phone + '\'' +
-                ", inventory=" + inventory +
-                '}';
+        return  name;
     }
 
     private String name;
@@ -65,7 +59,8 @@ public class Dealership {
 
     }
 
-    public void getAllVehicles(Vehicle vehicle){
+    public ArrayList<Vehicle> getAllVehicles(){
 
+    return inventory;
     }
 }

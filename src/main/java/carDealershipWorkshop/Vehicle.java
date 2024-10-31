@@ -1,4 +1,4 @@
-package Week5;
+package carDealershipWorkshop;
 
 public class Vehicle {
     public int getVin() {
