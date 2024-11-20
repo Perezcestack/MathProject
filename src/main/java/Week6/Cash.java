@@ -18,8 +18,8 @@ public class Cash extends Asset2{
     private int dinero;
 
 
-    @Override
-    public int getValue2() {
-        return super.getValue();
-    }
+//    @Override
+//    public int getValue2() {
+//        return super.getValue();
+//    }
 }

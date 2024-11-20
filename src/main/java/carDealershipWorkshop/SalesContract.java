@@ -28,7 +28,6 @@ public class SalesContract extends Contract {
         this.financing = financing;
     }
 
-
     @Override
     public void getTotalPrice() {
         double interestRate = getPrice() >= PRICE_MARGIN ? INTEREST_RATE_SMALL : INTEREST_RATE_DEFAULT;
